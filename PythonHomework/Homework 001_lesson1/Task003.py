@@ -7,7 +7,7 @@ coordinate_Y = float (input ("Введите координату Y: "))
 print ("X =", coordinate_X, ",", "Y =", coordinate_Y)
 if coordinate_X >0 and coordinate_Y >0:
     print ("Точка с координатами X =", coordinate_X, ";", "Y =", coordinate_Y, "лежит в первой четверти.")
-elif coordinate_X <0 and coordinate_Y >0:
+elif coordinate_X <0 and coordinate_Y >0: # можно записать так: coordinate_X < 0 < coordinate_Y
     print ("Точка с координатами X =", coordinate_X, ";", "Y =", coordinate_Y, "лежит во второй четверти.")
 elif coordinate_X <0 and coordinate_Y <0:
     print ("Точка с координатами X =", coordinate_X, ";", "Y =", coordinate_Y, "лежит в третьей четверти.")
