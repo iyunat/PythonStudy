@@ -5,6 +5,6 @@ nums = input ("Введите число: ")
 print ("Введеное Вами число =", nums)
 sum = 0
 for i in nums:
-    if i != ".":
-        sum += int (i) 
+    if i != "." and i != "-":
+        sum+= int (i)
 print ("Сумма цифр, введенного Вами числа составляет:", sum)
