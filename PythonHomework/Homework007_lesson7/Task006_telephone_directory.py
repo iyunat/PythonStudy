@@ -15,29 +15,29 @@ for key, value in telephone_directory.items():
 
 print ()
 
-with open("telephone.txt","w") as data:
-    for key,value in telephone_directory.items():
-        data.write("{}:{}\n".format(key,value))
+# with open("telephone.txt","w") as data:
+#     for key,value in telephone_directory.items():
+#         data.write("{}:{}\n".format(key,value))
      
 
-telephone_directory["Петров К.Н."] = 6541
-for key, value in telephone_directory.items():
-    print (key, value)
+# telephone_directory["Петров К.Н."] = 6541
+# for key, value in telephone_directory.items():
+#     print (key, value)
     
-print ()
+# print ()
 
 # поиск по номеру:
 
-def my_key(telephone_directory, value):
-    for k, v in telephone_directory.items():
-        if v == value:
-            return k
+# def my_key(telephone_directory, value):
+#     for k, v in telephone_directory.items():
+#         if v == value:
+#             return k
 
-print(my_key(telephone_directory, 4256))
+# print(my_key(telephone_directory, 4256))
 
-print()
+# print()
 
-# удаление номера
-del telephone_directory ["Петров К.Н."]
-for key, value in telephone_directory.items():
-    print (key, value)
+# # удаление номера
+# del telephone_directory ["Петров К.Н."]
+# for key, value in telephone_directory.items():
+#     print (key, value)
