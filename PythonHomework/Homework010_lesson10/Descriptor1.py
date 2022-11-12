@@ -1,4 +1,5 @@
 #Создать не менее двух дескрипторов для атрибутов классов, которые вы создали ранее в ДЗ
+# Дескриптор №1:
 
 class PositiveNumber:
     def __get__(self, instance, owner):
@@ -9,12 +10,8 @@ class PositiveNumber:
             raise ValueError("Не может быть отрицательным")
         instance.__dict__[self.my_attr] = value
 
-    def __delete__(self, instance):
-        del instance.__dict__[self.my_attr]
-    
+       
     def __set_name__(self, owner, my_attr):
-        # owner - владелец атрибута - <class '__main__.Worker'>
-        # my_attr - имя атрибута владельца - hours, rate
         self.my_attr = my_attr
 
 
