@@ -85,14 +85,14 @@ class PoliceCar (Car):
         print ("Это полиция, уступите дорогу!")
 
 
-c1 = Car ("Тойота", "красного", 250, False)
+c1 = Car ("Тойота", "красного", 250.7, False)
 c1.go()
 c1.stop()
 c1.turn ("направо")
 c1.show_speed (90)
 print()
 
-t1 = TownCar("Хонда", "желтого", 250, False, 500000)
+t1 = TownCar("Хонда", "желтого", 250.5, False, 500000)
 t1.go()
 t1.stop()
 t1.turn ("налево")
