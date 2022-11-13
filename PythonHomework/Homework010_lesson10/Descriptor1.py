@@ -30,6 +30,6 @@ class Road:
     def asphalt_mass (self):
         print (self.length * self.width * self.weight_square_meter * self.thickness_canvas)
 
-r1 = Road (20, 5000, 25, 0.05)
+r1 = Road (-20, -5000, -25, 0.05)
 
 r1.asphalt_mass()
